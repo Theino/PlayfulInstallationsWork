@@ -1,0 +1,6 @@
+﻿  ofApp.cpp
+src\ofApp.cpp(40): warning C4101: 'switchAmount': unreferenced local variable
+  Week2Audio.vcxproj -> C:\Users\Theino\Documents\GitHub\PlayfulInstallationsWork\Week2Audio\Week2Audio\bin\Week2Audio_debug.exe
+  Week2Audio.vcxproj -> bin\Week2Audio_debug.pdb (Full PDB)
+  
+  	                   9	C:\Users\Theino\Documents\GitHub\of_v0.9.8_vs_release\export\vs\Win32\
