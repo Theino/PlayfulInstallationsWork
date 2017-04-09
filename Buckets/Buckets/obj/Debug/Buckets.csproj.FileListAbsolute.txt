@@ -1,0 +1,9 @@
+C:\Users\Theino\Documents\GitHub\PlayfulInstallationsWork\Buckets\Buckets\bin\Debug\Buckets.exe.config
+C:\Users\Theino\Documents\GitHub\PlayfulInstallationsWork\Buckets\Buckets\bin\Debug\Buckets.exe
+C:\Users\Theino\Documents\GitHub\PlayfulInstallationsWork\Buckets\Buckets\bin\Debug\Buckets.pdb
+C:\Users\Theino\Documents\GitHub\PlayfulInstallationsWork\Buckets\Buckets\obj\Debug\Buckets.csprojResolveAssemblyReference.cache
+C:\Users\Theino\Documents\GitHub\PlayfulInstallationsWork\Buckets\Buckets\obj\Debug\Buckets.BucketsForm.resources
+C:\Users\Theino\Documents\GitHub\PlayfulInstallationsWork\Buckets\Buckets\obj\Debug\Buckets.Properties.Resources.resources
+C:\Users\Theino\Documents\GitHub\PlayfulInstallationsWork\Buckets\Buckets\obj\Debug\Buckets.csproj.GenerateResource.Cache
+C:\Users\Theino\Documents\GitHub\PlayfulInstallationsWork\Buckets\Buckets\obj\Debug\Buckets.exe
+C:\Users\Theino\Documents\GitHub\PlayfulInstallationsWork\Buckets\Buckets\obj\Debug\Buckets.pdb
