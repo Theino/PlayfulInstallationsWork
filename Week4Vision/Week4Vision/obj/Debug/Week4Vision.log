@@ -1,3 +1,5 @@
 ﻿  ofApp.cpp
-src\ofApp.cpp(43): error C2440: 'type cast': cannot convert from 'overloaded-function' to 'void *'
-  src\ofApp.cpp(43): note: Context does not allow for disambiguation of overloaded function
+  Week4Vision.vcxproj -> C:\Users\Theino\Documents\GitHub\PlayfulInstallationsWork\Week4Vision\Week4Vision\bin\Week4Vision_debug.exe
+  Week4Vision.vcxproj -> bin\Week4Vision_debug.pdb (Full PDB)
+  
+  	                   9	C:\Users\Theino\Documents\GitHub\of_v0.9.8_vs_release\export\vs\Win32\

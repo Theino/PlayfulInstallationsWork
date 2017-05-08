@@ -15,7 +15,7 @@ Particle::Particle(){
     damping = 0.01f;
     color = ofColor(255,255,255);
     a = 255;
-    radius = ofRandom(10,50);
+    radius = 2;
     life = 100;
 }
 

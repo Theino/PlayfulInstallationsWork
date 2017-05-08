@@ -34,13 +34,14 @@ void ofApp::update() {
 
 	cam.update();
 	bNewFrame = cam.isFrameNew();
+	colorImg.setFromPixels(cam.getPixels());
 	
 	if (bNewFrame) {
 
 		GoodFeaturesToTrackDetector detector;
 		vector<KeyPoint> keyPoints;
 		//detectorC.detect(m, keyPoints);
-		cv::Mat image(h, w, CV_8UC3, (void *)cam.);
+		//cv::Mat image(h, w, CV_8UC3, (void *)cam.);
 		
 
 		grayImage = colorImg;
@@ -53,39 +54,49 @@ void ofApp::update() {
 		grayDiff.absDiff(grayBg, grayImage);
 		grayDiff.threshold(threshold);
 
+		
+
 		// find contours which are between the size of 20 pixels and 1/3 the w*h pixels.
 		// also, find holes is set to true so we will get interior contours as well....
 	}
 
 
 	for (int i = 0; i < particles.size(); i++) {
-		particles[i].resetForce();
-		particles[i].bounceOffWalls();
-		particles[i].addDampingForce();
 		particles[i].update();
 
 	}
-
-
 }
 
 //--------------------------------------------------------------
 void ofApp::draw() {
-	cam.draw(0, 0);
-
-
-	/*
+	grayDiff.draw(0, 0);
 	for (int i = 0; i < particles.size(); i++) {
 		particles[i].draw();
 	}
-	*/
+	
 }
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key) {
-	for (int i = 0; i < particles.size(); i++) {
-		particles[i].vel.set(ofRandom(-2, 2), ofRandom(1, 5));
+	cout << "here" << endl;
+	ofPixels pixels = grayDiff.getPixels();
+	particles.clear();
+	for (int i = 0; i < pixels.size(); i++)
+	{
+		unsigned char c = pixels[i];
+		if (c > 0)
+		{
+			Particle p;
+			int xPos = i % 320;
+			int yPos = i / 320;
+			p.setInitialCondition(xPos, yPos,0,0);
+			particles.push_back(p);
+		}
 	}
+	for (int i = 0; i < particles.size(); i++) {
+		particles[i].vel.set(ofRandom(-2, 2), ofRandom(-2, 2));
+	}
+	
 }
 
 //--------------------------------------------------------------
