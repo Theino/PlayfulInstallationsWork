@@ -1,0 +1,1 @@
+ADDON_SOURCES_EXCLUDE += libs/oscpack/src/ip/posix/%
